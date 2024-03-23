@@ -1,0 +1,70 @@
+// about image style start
+.about_image {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/about-bg.jpg");
+  width: 100%;
+  min-height: 600px;
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  text-align: center;
+  div {
+    h1 {
+      font-size: 80px;
+    }
+    p {
+      font-size: 30px;
+      font-weight: 200;
+    }
+  }
+}
+// about image style end
+
+// about content style start
+.hero_content {
+  .about_content_p {
+    color: black;
+    font-size: 20px;
+    font-style: normal;
+  }
+}
+// about content style end
+
+@media only screen and (max-width: 880px) {
+  .about_image {
+    min-height: 400px;
+    div {
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 490px) {
+  .about_image {
+    min-height: 300px;
+
+    div {
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+  .hero_content {
+    div {
+      .about_content_p {
+        font-size: 12px;
+      }
+    }
+  }
+}
